@@ -1,23 +1,26 @@
 # Futures Terminal
 
-Desktop-first local trading terminal for Binance USD-M Futures, with:
-- Python backend engine (market data, signal pipeline, execution/risk plumbing)
-- React + TypeScript frontend terminal UI
-- Local SQLite + replay/snapshot storage
+Futures Terminal is a local trading dashboard project for Binance USD-M Futures.
 
-## Scope (v1)
-- One symbol: BTCUSDT
-- One exchange: Binance USD-M Futures
-- One market type: perpetual futures
-- One terminal page + one replay page
-- Basic order execution primitives only (market/limit/cancel/close/reduce-only/leverage)
+In simple words, this project is made to collect market data, show it in a web dashboard, and prepare the basic structure for trading tools. It has a Python backend and a React frontend.
 
-## Project layout
-- `backend/`: market ingestion, state engine, risk/execution, storage
-- `frontend/`: terminal UI (DOM, tape, heatmap, chart, panels)
-- `config/`: tunable JSON configs for symbols, risk, signal weights, layout
-- `docs/`: architecture, mapping, risk and release notes
-- `scripts/`: setup and run helpers for Windows
+This project should be treated as a research and learning project. It is not ready to be used for real-money trading without careful testing.
+
+## Current Scope
+
+- Main symbol: BTCUSDT
+- Exchange: Binance USD-M Futures
+- Market type: perpetual futures
+- Pages: terminal view and replay view
+- Basic order actions only, such as market, limit, cancel, close, reduce-only, and leverage
+
+## Project Layout
+
+- `backend/`: Python code for market data, risk logic, storage, and API work.
+- `frontend/`: React and TypeScript user interface.
+- `config/`: JSON settings for symbols, risk, signal weights, and layout.
+- `docs/`: notes about architecture, risk, and releases.
+- `scripts/`: helper scripts for running the app on Windows.
 
 ## Quick start (Windows PowerShell)
 1. Copy env template:
@@ -39,15 +42,19 @@ Desktop-first local trading terminal for Binance USD-M Futures, with:
 ## One-click launch (from the project folder)
 - Double-click `futures-terminal/LAUNCH_FUTURES_TERMINAL.bat`
 
-## Phase 1 behavior
-Current scaffold includes:
-- Binance public stream subscriber for BTCUSDT
-- Capture of `depth`, `aggTrade`, `bookTicker`, `markPrice@1s`, `kline_1m`, `forceOrder`
-- Raw event persistence to SQLite and JSONL replay files
-- FastAPI REST health/settings/trading placeholders
-- FastAPI WebSocket broadcast pipe for frontend
+## What It Does Right Now
 
-## Safety notes
-- Use testnet keys for development.
-- Keep `kill_switch_enabled` true in `config/risk.json` while iterating.
-- Do not enable automation or unsupported order types in v1.
+The current version includes:
+
+- A Binance public stream subscriber for BTCUSDT.
+- Market data capture for order book, trades, mark price, candles, and liquidations.
+- Local saving with SQLite and JSONL replay files.
+- FastAPI endpoints for health, settings, and trading placeholders.
+- A WebSocket connection so the frontend can receive live updates.
+
+## Safety Notes
+
+- Use testnet keys while developing.
+- Keep `kill_switch_enabled` set to `true` in `config/risk.json`.
+- Do not connect real funds until the project is fully reviewed and tested.
+- Trading is risky. This code is for development and research, not financial advice.
