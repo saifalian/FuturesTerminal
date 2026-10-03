@@ -1,0 +1,38 @@
+required_fields:
+  - data_health_ok
+  - final_test_avg_trade_return_after_cost
+  - final_test_pnl_after_cost
+  - final_test_reason
+  - probability_margin_sweep
+  - top_k_selective_eval
+  - confidence_bucket_eval_after_cost
+  - avg_true_long_good_return_after_cost
+  - avg_true_short_good_return_after_cost
+  - avg_bad_long_return_after_cost
+  - avg_bad_short_return_after_cost
+  - walk_forward_pass_count
+  - long_allowed
+  - short_allowed
+  - recommended_live_mode
+  - signal_quality_failed
+
+blocking_rules:
+  - if: data_health_ok == false
+    verdict: blocked
+    reason: data unhealthy
+  - if: missing_required_fields == true
+    verdict: blocked
+    reason: missing metrics/artifacts
+
+rejection_rules:
+  - if: walk_forward_pass_count == 0
+    verdict: rejected
+    reason: no walk-forward confirmation
+  - if: final_test_after_cost_edge <= 0
+    verdict: rejected
+    reason: no after-cost edge
+  - if: all_buckets_negative_after_cost == true
+    verdict: rejected
+    reason: no selective edge
+
+default_mode: HOLD_ONLY

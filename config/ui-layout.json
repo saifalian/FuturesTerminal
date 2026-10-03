@@ -1,0 +1,9 @@
+{
+  "layout": "terminal-v1",
+  "panels": {
+    "left": ["dom", "order_entry", "positions", "open_orders"],
+    "center": ["candles", "heatmap"],
+    "right": ["spread", "mark_funding", "tape"],
+    "bottom": ["cvd", "absorption", "spoofing", "bias"]
+  }
+}

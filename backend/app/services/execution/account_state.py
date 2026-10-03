@@ -1,0 +1,2 @@
+class AccountState:
+    pass

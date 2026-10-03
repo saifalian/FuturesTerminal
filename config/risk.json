@@ -1,0 +1,7 @@
+{
+  "max_leverage": 5,
+  "max_position_usdt": 500,
+  "max_daily_loss_usdt": 50,
+  "reduce_only_default": true,
+  "kill_switch_enabled": true
+}

@@ -1,0 +1,14 @@
+{
+  "live_streaming_enabled": true,
+  "replay_enabled": true,
+  "training_enabled": true,
+  "bots_enabled": true,
+  "backfill_enabled": true,
+  "training_ram_budget_gb": 4.0,
+  "training_prefetch_enabled": false,
+  "training_chunk_group_size": 2,
+  "training_process_recycle_enabled": true,
+  "training_worker_groups_before_restart": 1,
+  "training_worker_memory_cap_gb": null,
+  "keep_training_shards": false
+}

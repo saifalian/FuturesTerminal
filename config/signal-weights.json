@@ -1,0 +1,10 @@
+{
+  "liquidity_heatmap": 1.4,
+  "spread_pressure": 1.0,
+  "tape_speed": 1.1,
+  "cvd_delta": 1.2,
+  "absorption": 1.3,
+  "spoofing": 0.9,
+  "liquidation_pressure": 1.0,
+  "positioning_context": 0.8
+}

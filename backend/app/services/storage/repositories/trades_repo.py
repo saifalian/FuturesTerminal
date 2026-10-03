@@ -1,0 +1,3 @@
+class TradesRepo:
+    pass
+

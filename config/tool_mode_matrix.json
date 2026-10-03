@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "rows": {
+    "book": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "candles": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "trades": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "mark_funding": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "liquidations": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "replay_candle_core": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "data_quality_score": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "weighted_exchange_controls": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "liquidity_event_alerts": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "signal_confluence_meter": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "execution_simulator_panel": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "confluence_score": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "long_short_checklist": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "entry_quality_meter": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "regime_detector": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "absorption_vs_breakout": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "spoof_confidence_score": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "mtf_alignment": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "playbook_tags": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "model_inputs_momentum": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "model_inputs_volatility": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "model_inputs_trend": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "model_inputs_orderflow": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "model_inputs_liquidity": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "model_inputs_context": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "main_chart": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "orderbook_dominance": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "live_ladder": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "cvd_panel": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "liquidity_area": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "market_snapshot": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "bias_meter": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "positioning_panel": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "spoofing_panel": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "absorption_panel": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    },
+    "safety_panel": {
+      "live": false,
+      "replay": true,
+      "recording": false,
+      "training": true,
+      "bot": false
+    }
+  }
+}

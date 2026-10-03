@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+.venv/
+.python310/
+.venv_broken*/
+python310/
+venv_broken*/
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Env/data
+.env
+backend/data/sqlite/*.db
+backend/data/sqlite/*.db-shm
+backend/data/sqlite/*.db-wal
+backend/data/logs/*.log
+backend/data/replays/*.jsonl
+backend/data/snapshots/*.json
+backend/data/ml/
+backend/data/market_events/
+models/
+artifacts/
+*.log
+*.err.log
+*.sqlite
+*.parquet
+*.feather
+*.npz
+*.npy
+_ml_api_out.log
+_ml_api_err.log
+frontend/tsconfig.tsbuildinfo
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

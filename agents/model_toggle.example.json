@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "fast": {
+      "labour_model": "openai-codex/gpt-5.3-codex",
+      "rev_model": "openai-codex/gpt-5.3-codex"
+    },
+    "strict": {
+      "labour_model": "openai-codex/gpt-5.3-codex",
+      "rev_model": "gpt-5.5"
+    }
+  },
+  "default_profile": "strict"
+}

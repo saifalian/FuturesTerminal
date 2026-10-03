@@ -1,0 +1,2 @@
+class EmergencyActions:
+    pass

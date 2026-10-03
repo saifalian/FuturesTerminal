@@ -1,0 +1,3 @@
+class PositionsRepo:
+    pass
+

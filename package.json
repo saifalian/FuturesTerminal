@@ -1,0 +1,11 @@
+{
+  "name": "futures-terminal",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "install:all": "npm --prefix frontend install",
+    "dev": "powershell -ExecutionPolicy Bypass -File ./scripts/run_terminal.ps1",
+    "dev:backend": "powershell -ExecutionPolicy Bypass -File ./scripts/run_backend.ps1",
+    "dev:frontend": "powershell -ExecutionPolicy Bypass -File ./scripts/run_frontend.ps1"
+  }
+}
