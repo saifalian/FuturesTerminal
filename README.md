@@ -12,6 +12,24 @@ Futures Terminal is a full-stack trading research terminal. It has a Python back
 
 The goal is to keep the project easy to understand, easy to run, and useful for learning or further development.
 
+## Purpose And Idea
+
+**Purpose:** The purpose of this project is to study crypto futures markets with a local dashboard, backend services, signal panels, replay tools, and research screens.
+
+**Idea:** The idea is to have one terminal where market data, liquidity areas, order-book style panels, signals, logs, and replay views can be checked together.
+
+**Why I made it:** I made this to learn full-stack trading-tool development with Python, React, TypeScript, WebSocket/REST style flows, and market research features.
+
+## Screenshots
+
+### Real terminal dashboard
+
+![Real terminal dashboard](docs/screenshots/real-terminal.png)
+
+### Project preview
+
+![Project preview](docs/screenshots/preview.svg)
+
 ## Main Features
 
 - Trading-style dashboard UI
@@ -59,14 +77,6 @@ scripts/       Setup and run scripts
 3. Go into frontend and run npm install.
 4. Start backend and frontend using the scripts in scripts/.
 5. Open the local dashboard in your browser.
-
-## Screenshot
-
-The image above is a clean project preview for GitHub. It shows the main idea of the project in a simple way.
-
-## Build Check
-
-Build check: the React/TypeScript frontend was tested with npm run build after fixing a workload-controls type issue and completed successfully.
 
 ## Current Status
 
