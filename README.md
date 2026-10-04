@@ -1,6 +1,5 @@
 # Futures Terminal
 
-![Futures Terminal preview](docs/screenshots/preview.svg)
 
 ## Short Description
 
@@ -25,10 +24,6 @@ The goal is to keep the project easy to understand, easy to run, and useful for 
 ### Real terminal dashboard
 
 ![Real terminal dashboard](docs/screenshots/real-terminal.png)
-
-### Project preview
-
-![Project preview](docs/screenshots/preview.svg)
 
 ## Main Features
 
