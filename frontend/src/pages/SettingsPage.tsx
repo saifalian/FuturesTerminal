@@ -3790,12 +3790,13 @@ export default function SettingsPage({
               <input
                 type="checkbox"
                 checked={Boolean(workloadControls?.keep_training_shards)}
-                onChange={(e) =>
+                onChange={(e) => {
+                  if (!workloadControls || !onWorkloadControlsChange) return;
                   onWorkloadControlsChange({
                     ...workloadControls,
                     keep_training_shards: e.target.checked,
-                  })
-                }
+                  });
+                }}
               />
               Keep Training Shards (debug)
             </label>
