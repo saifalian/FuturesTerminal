@@ -1,60 +1,77 @@
 # Futures Terminal
 
-Futures Terminal is a local trading dashboard project for Binance USD-M Futures.
+![Futures Terminal preview](docs/screenshots/preview.svg)
 
-In simple words, this project is made to collect market data, show it in a web dashboard, and prepare the basic structure for trading tools. It has a Python backend and a React frontend.
+## Short Description
 
-This project should be treated as a research and learning project. It is not ready to be used for real-money trading without careful testing.
+A local crypto futures dashboard for market research, signals, replay, and analysis.
 
-## Current Scope
+## About This Project
 
-- Main symbol: BTCUSDT
-- Exchange: Binance USD-M Futures
-- Market type: perpetual futures
-- Pages: terminal view and replay view
-- Basic order actions only, such as market, limit, cancel, close, reduce-only, and leverage
+Futures Terminal is a full-stack trading research terminal. It has a Python backend and a React/TypeScript frontend for market data, signal views, replay screens, and trading-tool experiments.
 
-## Project Layout
+The goal is to keep the project easy to understand, easy to run, and useful for learning or further development.
 
-- `backend/`: Python code for market data, risk logic, storage, and API work.
-- `frontend/`: React and TypeScript user interface.
-- `config/`: JSON settings for symbols, risk, signal weights, and layout.
-- `docs/`: notes about architecture, risk, and releases.
-- `scripts/`: helper scripts for running the app on Windows.
+## Main Features
 
-## Quick start (Windows PowerShell)
-1. Copy env template:
-   - `Copy-Item .env.example .env`
-2. Backend setup:
-   - `python -m venv .venv`
-   - `.\.venv\Scripts\Activate.ps1`
-   - `pip install -r requirements.txt`
-3. Frontend setup:
-   - `cd frontend`
-   - `npm install`
-4. Run both:
-   - Back to repo root, run `./scripts/run_terminal.ps1`
+- Trading-style dashboard UI
+- Market data service structure
+- Heatmap, candles, signal, and order panels
+- Replay and logging pages
+- Configurable symbols and risk settings
+- Backend/frontend development scripts
 
-## One-click launch (from `D:\PROJECTS\20 sec`)
-- Double-click `LAUNCH_FUTURES_TERMINAL.bat`
-- This starts backend + frontend and opens `http://127.0.0.1:5173`
+## Tech Stack
 
-## One-click launch (from the project folder)
-- Double-click `futures-terminal/LAUNCH_FUTURES_TERMINAL.bat`
+- Python backend
+- React
+- TypeScript
+- Vite
+- REST/WebSocket
 
-## What It Does Right Now
+## Project Location
 
-The current version includes:
+Main local folder:
 
-- A Binance public stream subscriber for BTCUSDT.
-- Market data capture for order book, trades, mark price, candles, and liquidations.
-- Local saving with SQLite and JSONL replay files.
-- FastAPI endpoints for health, settings, and trading placeholders.
-- A WebSocket connection so the frontend can receive live updates.
+```text
+D:\PROJECTS\FuturesTerminal\futures-terminal
+```
 
-## Safety Notes
+GitHub repository:
 
-- Use testnet keys while developing.
-- Keep `kill_switch_enabled` set to `true` in `config/risk.json`.
-- Do not connect real funds until the project is fully reviewed and tested.
-- Trading is risky. This code is for development and research, not financial advice.
+https://github.com/saifalian/FuturesTerminal
+
+## Project Structure
+
+```text
+futures-terminal/
+backend/       Python backend services
+frontend/      React/TypeScript frontend
+config/        Symbols, risk, and app settings
+docs/          Extra documentation
+scripts/       Setup and run scripts
+```
+
+## How To Run
+
+1. Go into futures-terminal.
+2. Install Python requirements.
+3. Go into frontend and run npm install.
+4. Start backend and frontend using the scripts in scripts/.
+5. Open the local dashboard in your browser.
+
+## Screenshot
+
+The image above is a clean project preview for GitHub. It shows the main idea of the project in a simple way.
+
+## Current Status
+
+This project is uploaded to GitHub and prepared as a portfolio-style repository. More improvements can be added later, such as real app screenshots, demo videos, releases, and issue templates.
+
+## Safety Note
+
+This is a research project, not financial advice. Do not connect real funds without deep testing.
+
+## License
+
+No license file is included yet. Add a license before using this project as an open-source project.
